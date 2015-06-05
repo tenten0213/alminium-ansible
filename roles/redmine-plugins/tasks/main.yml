@@ -18,7 +18,7 @@
 
 - install-rm-plugin:
     name=redmine_code_review
-    ver=default
+    ver=0.6.4
     url=https://bitbucket.org/haru_iida/redmine_code_review
   environment: env
 

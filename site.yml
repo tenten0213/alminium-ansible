@@ -1,11 +1,11 @@
-- hosts: localhost
+- hosts: all
   vars:
   - dbpasswd: localpass
   ## os_family should debian or centos
   - os_family: centos
   - install_dir: /opt/alminium
   - LANG: ja
-  - http_proxy: 
+#  - http_proxy: http://yourproxy:port
 
   - env: 
       http_proxy: "{{http_proxy}}"
@@ -20,4 +20,4 @@
   - mariadb
   - redmine
   - vcs
-#  - redmine-plugins
+  - redmine-plugins
